@@ -5,7 +5,6 @@
   },
   "scripts": {
     "clean": "rimraf out-tsc dist/* integration/node_modules/@ng-select",
-    "prepare": "yarn run build",
     "prebuild": "yarn clean",
     "build": "ng-packagr -p ./src/package.json && yarn build:themes",
     "build:demo": "rimraf dist && webpack --config ./scripts/webpack.dev.js --progress --profile --bail",
